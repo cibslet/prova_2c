@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset id="telalogin">
+        <legend>login</legend>
+        <form action="">
+            <input type="text" placeholder="digite seu E-mail" id="login">
+            <br><br>
+            <input type="password" placeholder="digite sua senha" id="senha">
+            <br><br>
+            <input type="submit" onclick="logar(); return false">
+            <br><br>
+    
+
+        </form>
+    </div>
+</body>
+<script>
+    function logar(){
+        var login = document.getElementById("login").value;
+        var senha = document.getElementById("senha").value;
+        var segurança= document.getElementById("segurança").value;
+        if (login =="login" && senha == "senha" ){
+            alert('logado com sucesso');
+          location.href=''
+        }else {
+            alert('e-mail ou senha ou mae incorretos');
+        }
+    }
+    
+    </script>
+</html>
