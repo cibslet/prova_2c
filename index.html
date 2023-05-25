@@ -10,32 +10,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <fieldset id="telalogin">
-        <legend>login</legend>
-        <form action="">
-            <input type="text" placeholder="digite seu E-mail" id="login">
-            <br><br>
-            <input type="password" placeholder="digite sua senha" id="senha">
-            <br><br>
-            <input type="submit" onclick="logar(); return false">
-            <br><br>
+    <div>
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username"><br><br>
     
-
-        </form>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password"><br><br>
+    
+        <input type="button" value="Entrar" onclick="verificarLogin()">
     </div>
 </body>
 <script>
-    function logar(){
-        var login = document.getElementById("login").value;
-        var senha = document.getElementById("senha").value;
-        var segurança= document.getElementById("segurança").value;
-        if (login =="login" && senha == "senha" ){
-            alert('logado com sucesso');
-          location.href=''
-        }else {
-            alert('e-mail ou senha ou mae incorretos');
-        }
+    function verificarLogin() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      if (username === "let" && password === "123") {
+        alert("Login bem-sucedido!");
+        location.href="leticia.html"
+      } else {
+        alert("Nome de usuário ou senha inválidos!");
+      }
     }
-    
     </script>
 </html>

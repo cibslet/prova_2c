@@ -6,3 +6,11 @@ body {
     background-image: url(index.html);
 }
 
+div{
+    text-align: center;
+    padding-top: 10px;
+    width: 200px;
+    margin: 0px 700px 20px ;
+    margin-top: 270px;
+    border: 2px solid rgb(24, 20, 20) ;
+}
